@@ -17,9 +17,10 @@ let request = https.get(options,(response) => {
 		body = body + data
 	})
 	response.on('end', () => {
-		console.log(typeof body)
+		let profile = JSON.parse(body)
+		console.log(`${profile.login} owns ${profile.public_repos} repo(s) and has ${profile.followers} followers`)
 	})
-//TODO: Parse error
+//TODO: Parse the data
 })
 
 request.end()

@@ -7,5 +7,5 @@ problem we need a simple to look at GitHub profile
 
 * [x] Connect to GitHub API
 * [x] Read the data
-* [ ] Parse the data
-* [ ] Print the data out
+* [x] Parse the data
+* [x] Print the data out
