@@ -10,8 +10,16 @@ const options = {
 	}
 }
 
-let requerst = https.get(options,(result) =>{
-	console.log('Got Response: ',result.statusCode)
+//TODO : [x] Read the data
+let request = https.get(options,(response) => {
+	let body = ''
+	response.on('data', (data) => {
+		body = body + data
+	})
+	response.on('end', () => {
+		console.log(typeof body)
+	})
+//TODO: Parse error
 })
 
 request.end()
