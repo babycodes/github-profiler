@@ -1,9 +1,9 @@
-#Gihub Profiler
+# Gihub Profiler
 
 problem we need a simple to look at GitHub profile
 
 
-##TODO
+## TODO
 
 * [x] Connect to GitHub API
 * [ ] Read the data
